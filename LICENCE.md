@@ -1,6 +1,6 @@
 BSD 3-Clause License
 
-Copyright (c) 2017, debug-sharp
+Copyright (c) 2017, Tom Flídr
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
