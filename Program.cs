@@ -14,6 +14,7 @@ class Program {
     private static void _demoDumpAndLog() {
         Console.Write("Press enter key to dump demo data and write it to HDD.");
         Console.ReadLine();
+        Console.WriteLine();
 
         var demoObject = new Dictionary<string, object>() {
             { "clark", new {
@@ -35,10 +36,14 @@ class Program {
 
         Debug.Dump(demoObject);
         Debug.Log(demoObject);
+
+        Console.WriteLine();
+        Console.WriteLine();
     }
     private static void _demoException () {
         Console.Write("Press enter key to dump catched demo exception and write it to HDD.");
         Console.ReadLine();
+        Console.WriteLine();
 
         try {
             throw new Exception("Demo exception:-)");
@@ -46,10 +51,14 @@ class Program {
             Debug.Dump(ex);
             Debug.Log(ex);
         }
+        
+        Console.WriteLine();
+        Console.WriteLine();
     }
     private static void _runTests () {
         Console.Write("Pres enter key to start duping test objects.");
         Console.ReadLine();
+        Console.WriteLine();
 
 		var dlTest = new Tests.DumpingAndLoging();
 		dlTest.TestAll();
