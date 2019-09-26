@@ -63,8 +63,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Desharp, Version=1.3.0.0, Culture=neutral, PublicKeyToken=cd60d985c52bcd6f, processorArchitecture=MSIL">
-      <HintPath>packages\Desharp.1.3.0\lib\net40\Desharp.dll</HintPath>
+    <Reference Include="Desharp, Version=1.3.0.1, Culture=neutral, PublicKeyToken=cd60d985c52bcd6f, processorArchitecture=MSIL">
+      <HintPath>packages\Desharp.1.3.0.1\lib\net40\Desharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Desharp.Tests, Version=1.3.0.1, Culture=neutral, processorArchitecture=MSIL">
@@ -93,7 +93,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="App.config" />
     <None Include="Desharp.config.example" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
