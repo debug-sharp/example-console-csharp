@@ -63,7 +63,22 @@
     <LangVersion>5</LangVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Desharp, Version=1.3.0.0, Culture=neutral, PublicKeyToken=cd60d985c52bcd6f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Desharp.1.3.0\lib\net40\Desharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Desharp.Tests, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Desharp.Tests.1.3.0\lib\net40\Desharp.Tests.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
@@ -79,16 +94,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\desharp\Desharp.csproj">
-      <Project>{4f63d16b-a1e9-45a9-ac2f-831a1220b2b9}</Project>
-      <Name>Desharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\tests\Tests.csproj">
-      <Project>{986c7801-a810-456d-8d5a-c70319717191}</Project>
-      <Name>Tests</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -60,10 +60,10 @@ class Program {
         Console.ReadLine();
         Console.WriteLine();
 
-		var dlTest = new Tests.DumpingAndLoging();
+		var dlTest = new Desharp.Tests.DumpingAndLoging();
 		dlTest.TestAll();
 
-		var eTest = new Tests.ExceptionsRendering();
+		var eTest = new Desharp.Tests.ExceptionsRendering();
 		eTest.TestAll();
     }
 }
